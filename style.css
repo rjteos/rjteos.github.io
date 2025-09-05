@@ -1,0 +1,122 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #12122b; /* Azul oscuro */
+    color: #e0e0e0; /* Blanco suave para las letras */
+    margin: 0;
+}
+
+.user-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 14px;
+    color: #808080; /* Un gris claro para el texto */
+    line-height: 1.4;
+}
+
+.user-info p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #1a1a3a; /* Azul más claro que el fondo */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #ffffff; /* Blanco puro para el título */
+    margin-bottom: 30px;
+}
+
+.device-controls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.device-btn {
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a1a3a; /* Color del texto del botón */
+    background-color: #a0a0a0; /* Gris apagado cuando está inactivo */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.device-btn:hover {
+    transform: translateY(-2px);
+}
+
+.device-btn.active {
+    background-color: #f7d700; /* Amarillo vibrante para encendido */
+    color: #1a1a3a;
+}
+
+.gauge-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gauge-container {
+    position: relative;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.gauge-label {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #ffffff; /* Blanco para el valor de la temperatura */
+}
+
+.temperature-controls {
+    display: flex;
+    gap: 15px;
+}
+
+.temperature-controls button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white; /* Texto blanco en los botones */
+}
+
+#btn-temp-up {
+    background-color: #2e8b57; /* Verde oscuro */
+}
+
+#btn-temp-up:hover {
+    background-color: #246a41;
+}
+
+#btn-temp-down {
+    background-color: #cc4444; /* Rojo oscuro */
+}
+
+#btn-temp-down:hover {
+    background-color: #b33a3a;
+}

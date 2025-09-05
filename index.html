@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="user-info">
+        <p>Nombre: Ronaldo Javier Teos Coque</p>
+        <p>Carnet: 25008794</p>
+    </div>
+
+    <div class="container">
+        <h1>Control de Dispositivos y Temperatura</h1>
+        
+        <div class="device-controls">
+            <button id="btn-device-1" class="device-btn">Dispositivo 1</button>
+            <button id="btn-device-2" class="device-btn">Dispositivo 2</button>
+            <button id="btn-device-3" class="device-btn">Dispositivo 3</button>
+            <button id="btn-device-4" class="device-btn">Dispositivo 4</button>
+        </div>
+
+        <div class="gauge-section">
+            <div class="gauge-container">
+                <svg id="gauge" width="300" height="200"></svg>
+                <div class="gauge-label">
+                    <span id="temp-value">25</span>°C
+                </div>
+            </div>
+            <div class="temperature-controls">
+                <button id="btn-temp-up">Subir Temp</button>
+                <button id="btn-temp-down">Bajar Temp</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
